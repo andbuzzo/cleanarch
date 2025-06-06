@@ -1,8 +1,8 @@
-package com.d3h.cleanarch.core.usercase;
+package com.d3h.cleanarch.core.usecase;
 
 import com.d3h.cleanarch.core.domain.Customer;
 
-public interface InsertCustomerUserCase {
+public interface InsertCustomerUseCase {
 
     void insert(Customer customer, String zipCode);
 }

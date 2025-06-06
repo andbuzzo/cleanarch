@@ -2,6 +2,7 @@ package com.d3h.cleanarch.entrypoint.controller.mapper;
 
 import com.d3h.cleanarch.core.domain.Customer;
 import com.d3h.cleanarch.entrypoint.controller.request.CustomerRequest;
+import com.d3h.cleanarch.entrypoint.controller.response.CustomerResponse;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
@@ -12,5 +13,7 @@ public interface CustomerMapper {
     @Mapping(target = "address", ignore = true)
     @Mapping(target = "isValidCpf", ignore = true)
     Customer toCustomer(CustomerRequest customerRequest);
+
+    CustomerResponse toCustomerResponse(Customer customer);
 
 }
